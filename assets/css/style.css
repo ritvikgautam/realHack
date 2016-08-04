@@ -1,0 +1,139 @@
+html {
+  font-family: sans-serif; 
+}
+
+.main{
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav.main-nav {
+    background: #333;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2f2f2f), to(#4f4f4f));
+    width: 100%;
+}
+
+.top-nav {
+    border-bottom: 2px solid #111;
+    height: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.top-nav li {
+    background: #333;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2f2f2f), to(#4f4f4f));
+    border-bottom: 2px solid #111;
+    border-right: 1px solid #555;
+    float:left;
+    font-size: 14px;
+    height: 20px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    width: 150px;
+    transition: all 0.3s ease;
+}
+
+.top-nav li:hover {
+    height: 30px;
+}
+
+.top-nav li:hover a{
+    color: #fff;
+    top: 5px;
+    -webkit-transform:  scale(1.5) rotate(360deg);
+    -moz-transform:     scale(1.5) rotate(360deg);
+    -o-transform:       scale(1.5) rotate(360deg);
+    -ms-transform:      scale(1.5) rotate(360deg);
+    transform:          scale(1.5) rotate(360deg);
+}
+
+.top-nav li a {
+    color: #aaa;
+    padding-top: 7px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+
+.button{
+    background-color: #4ae;
+    border: 1px solid #28c;
+    display: block;
+    height: 65px;
+    width: 220px;
+    margin: 15px auto;
+    overflow: hidden;
+    padding-bottom: 5px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px #aaa, 1px 1px 1px #6cf inset;
+    transition: all 0.5s ease;
+}
+.button:hover{
+    background-color: #6cf;
+    border: 1px solid #4ae;
+    box-shadow: 1px 1px 5px #aaa, 1px 1px 1px #9ef inset;
+}
+
+.button img{
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
+
+.button img.over{
+    z-index: 500;
+    transition: all 0.3s ease;
+}
+.button:hover img.over{
+    -webkit-transform: scale(5) rotate(20deg);
+    -moz-transform: scale(5) rotate(20deg);
+    -ms-transform: scale(5) rotate(20deg);
+    -o-transform: scale(5) rotate(20deg);
+    transform: scale(5) rotate(20deg);
+    opacity: 0;
+}
+
+.button img.under{
+    opacity: 0.25;
+    z-index: 499;
+}
+
+.button span{
+    color: #fff;
+    text-shadow: 0 1px #888;
+    text-decoration: none;
+    position: absolute;
+}
+
+.button span.big-text{
+    font-size: 22px;
+    top: 25px;
+    right: 20px;
+    transition: all 0.3s ease;
+}
+
+.button:hover span.big-text{
+    top:15px;
+}
+
+.button span.small-text{
+    font-size: 14px;
+    top: 40px;
+    right: -200px;
+    transition: all 0.3s ease 0.3s; /* second .3s is delay before animation */
+}
+
+.button:hover span.small-text{
+    right: 20px;
+}
